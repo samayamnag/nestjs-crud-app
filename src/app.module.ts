@@ -9,6 +9,8 @@ import { databaseConfig } from './config/database';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ContactsModule } from './contacts/contacts.module';
+import { AuthModule } from './auth/auth.module';
+import { UsersModule } from './users/users.module';
 
 @Module({
   imports: [
@@ -25,6 +27,8 @@ import { ContactsModule } from './contacts/contacts.module';
       useClass: MongooseConnectionService,
     }),
     ContactsModule,
+    AuthModule,
+    UsersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
