@@ -6,6 +6,7 @@ import { DatabaseConnectionService } from './database-connection.service';
 import { MongooseConnectionService } from './mongoose-connection.service';
 import { appConfig } from './config/app';
 import { databaseConfig } from './config/database';
+import { jwtConfig } from './config/jwt';
 import { TypeOrmModule } from '@nestjs/typeorm';
 import { MongooseModule } from '@nestjs/mongoose';
 import { ContactsModule } from './contacts/contacts.module';
@@ -16,7 +17,7 @@ import { UsersModule } from './users/users.module';
   imports: [
     ConfigModule.forRoot({
       isGlobal: true,
-      load: [appConfig, databaseConfig,],
+      load: [appConfig, databaseConfig, jwtConfig,],
     }),
     TypeOrmModule.forRootAsync({
       imports: [ConfigModule],
