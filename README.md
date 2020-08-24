@@ -33,6 +33,15 @@ $ npm run start:dev
 
 ```
 
+### Application documentation
+```bash
+$ npx compodoc -p tsconfig.json -s
+
+```
+- [Here you can find your appliaction documentation](http://localhost:8080)
+- [For more info](https://docs.nestjs.com/recipes/documentation)
+
+
 # Code Overview
 
 ## Dependencies
@@ -45,10 +54,11 @@ $ npm run start:dev
 - [dotenv](https://github.com/motdotla/dotenv) - To load environment variables from .env file
 - [bcrypt](https://github.com/kelektiv/node.bcrypt.js) - bcrypt for NodeJs
 - [class-validator](https://github.com/typestack/class-validator) - Decorator-based property validation for classes.
-- [class-transformer](https://github.com/typestack/class-transformer) - Decorator-based transformation, serialization, and deserialization between objects and classes
-- [passport-jwt](https://github.com/mikenicholson/passport-jwt) - A Passport strategy for authenticating with a JSON      
-  Web Token.
-
+- [class-transformer](https://github.com/typestack/class-transformer) - Decorator-based transformation, serialization,  
+  and deserialization between objects and classes
+- [passport-jwt](https://github.com/mikenicholson/passport-jwt) - A Passport strategy for authenticating with a JSON Web  
+  Token.
+- [documentation](https://github.com/compodoc/compodoc) - Documentation tool
 
 ## Authentication
 

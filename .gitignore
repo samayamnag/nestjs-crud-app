@@ -36,3 +36,6 @@ lerna-debug.log*
 # Environment specific
 .env
 .env_bk
+
+# Documentation
+/documentation
